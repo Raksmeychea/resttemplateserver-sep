@@ -67,7 +67,7 @@ jobs:
 
       
       - name: Install kustomize
-        shell: pwsh
+        shell: powershell
         run: |
           $version = "v5.7.1"
 
@@ -82,7 +82,7 @@ jobs:
           .\kustomize.exe version    
 
       - name: Update image tag
-        shell: pwsh
+        shell: powershell
         run: |
           cd gitops/${{ env.GITOPS_PATH }}
 
